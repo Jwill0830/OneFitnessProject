@@ -1,0 +1,61 @@
+{
+    "Exercises":[
+        {
+            "id": 1,
+            "exercise": "Bench Press",
+            "target": "Upper"
+        },
+
+        {
+            "id": 2,
+            "exercise": "Curls",
+            "target": "Upper"
+        },
+
+        {
+            "id": 3,
+            "exercise": "Military Press",
+            "target": "Upper"
+        },
+
+        {
+            "id": 4,
+            "exercise": "Pull-ups",
+            "target": "Upper"
+        },
+
+        {
+            "id": 5,
+            "exercise": "Row",
+            "target": "Upper"
+        },
+
+        {
+            "id": 6,
+            "exercise": "Squat",
+            "target": "Lower"
+        },
+
+        {
+            "id": 7,
+            "exercise": "Dead lift",
+            "target": "Lower"
+        },
+
+        {
+            "id": 8,
+            "exercise": "Romanian Dead Lift",
+            "target": "Lower" },
+
+        {
+            "id": 9,
+            "exercise": "Lunges",
+            "target": "Lower"
+        },
+
+        {
+            "id": 10,
+            "exercise": "Calf Raises",
+            "target": "Lower"
+        } ]
+}
