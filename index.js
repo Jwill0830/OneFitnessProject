@@ -10,6 +10,16 @@
 // 
 
 const exerciseUrl = "http://localhost:3000/Exercises"
-
-fetch (exerciseUrl)
-    .then()
+document.addEventListener('DOMContentLoaded', () => {
+    fetch (exerciseUrl)
+    .then((resp) => resp.json())
+    .then(exerciseData => {
+        const excerciseCont = document.getElementById('exercise-container')
+        exerciseData.forEach((exerciseObj) =>{
+            const list = document.createElement('img')
+            list.src = exerciseObj.image
+            list.id = exerciseObj.id
+            excerciseCont.append(list)
+        })
+    })
+})
