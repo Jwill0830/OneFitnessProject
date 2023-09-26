@@ -12,6 +12,7 @@
 const exerciseUrl = "http://localhost:3000/Exercises"
 
 
+
 document.addEventListener('DOMContentLoaded', () => {
     fetch(exerciseUrl)
     .then((resp) => resp.json())
@@ -46,6 +47,11 @@ document.addEventListener('DOMContentLoaded', () => {
     
     })
 });
+
+document.addEventListener("load", () => {
+    alert("Welcome to OneFitness")
+})
+
 
 // when the mouse is hovering over h1 
 //the h1.innerText will enlargen 
