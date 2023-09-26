@@ -10,6 +10,7 @@
 // 
 
 const exerciseUrl = "http://localhost:3000/Exercises"
+const likeButton = document.createElement('button');
 
 document.addEventListener('DOMContentLoaded', () => {
     fetch(exerciseUrl)
@@ -17,18 +18,20 @@ document.addEventListener('DOMContentLoaded', () => {
     .then(exerciseData => {
         const exerciseCont = document.getElementById('exercise-container')
         exerciseData.forEach((exerciseObj) => {
-
+            
             const img = document.createElement('img');
             img.src = exerciseObj.image;
             img.id = exerciseObj.id;
 
-            const likeButton = document.createElement('button');
+          
             likeButton.className = 'btn';
             likeButton.innerText = 'Like';
-
+                const span = document.createElement("span") 
+                span.innerText = "1"
+                
             const image_container = document.createElement("div");
             
-            image_container.append(img, likeButton);
+            image_container.append(img, likeButton, span);
 
         
             exerciseCont.append(image_container);
@@ -36,3 +39,7 @@ document.addEventListener('DOMContentLoaded', () => {
     })
 })
 
+likeButton.addEventListener('click', (event) => {
+    const buttonClicked = event.target
+    buttonClicked ++ 
+})
