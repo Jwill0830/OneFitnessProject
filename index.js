@@ -51,12 +51,15 @@ const title = document.getElementById('title')
 title.addEventListener('mouseover', () => {
     title.textContent = 'ONEFITNESS'
 });
-const form = document.querySelector('form ')
+const form = document.querySelector('form')
 const reviewCont = document.getElementById('form-container')
-console.log(reviewCont)
 form.addEventListener('submit',(event) => {
-    form.preventDefault()
-reviewCont = event.target.value 
+    event.preventDefault()
+    const userInput = event.target.review.value
+    const div = document.createElement('div')
+    div.innerText = userInput
+    reviewCont.append(div)
+    
 
     
 
