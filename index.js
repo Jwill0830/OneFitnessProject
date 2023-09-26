@@ -47,9 +47,9 @@ document.addEventListener('DOMContentLoaded', () => {
     
     })
 });
-
-document.addEventListener("load", () => {
-    alert("Welcome to OneFitness")
+const title = document.getElementById('title')
+title.addEventListener('mouseover', () => {
+    title.textContent = 'ONEFITNESS'
 })
 
 

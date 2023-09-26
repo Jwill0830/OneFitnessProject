@@ -1,7 +1,10 @@
-h1 {
+#title{
     text-align: center;
     font-size: 50px;
     height: 50px;
+}
+#title:hover{
+ font-size: 80px;
 }
 
 img {
@@ -44,3 +47,4 @@ img {
     text-align: center;
     margin-top: 10px; 
 }
+
