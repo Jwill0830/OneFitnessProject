@@ -36,11 +36,16 @@ document.addEventListener('DOMContentLoaded', () => {
 
             likeButton.addEventListener('click', () => {
                 span.innerText++
-               
-            
+                const title = document.getElementById('title')
+            })
+
+            image_container.addEventListener('mouseover', () => {
+                
             })
         })
+    
     })
 });
-// we want to click a likeButton
-// the clickedLikeButton should increase the span containing the number
+
+// when the mouse is hovering over h1 
+//the h1.innerText will enlargen 
