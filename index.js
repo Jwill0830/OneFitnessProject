@@ -23,6 +23,8 @@ document.addEventListener('DOMContentLoaded', () => {
             exerciseCont.append(img);
 
             const likeButton = document.createElement('button');
+            likeButton.className = 'btn'
+            console.log(likeButton)
             likeButton.innerText = 'Like';
             likeButton.addEventListener('click', () => {
                 alert('Liked ' + exerciseObj.id);
