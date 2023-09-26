@@ -10,7 +10,7 @@
 // 
 
 const exerciseUrl = "http://localhost:3000/Exercises"
-const likeButton = document.createElement('button');
+
 
 document.addEventListener('DOMContentLoaded', () => {
     fetch(exerciseUrl)
@@ -23,23 +23,24 @@ document.addEventListener('DOMContentLoaded', () => {
             img.src = exerciseObj.image;
             img.id = exerciseObj.id;
 
-          
+            const likeButton = document.createElement('button');
             likeButton.className = 'btn';
             likeButton.innerText = 'Like';
-                const span = document.createElement("span") 
-                span.innerText = "1"
+            const span = document.createElement("span")
+            span.className = "nums" 
+            span.innerText = 0
                 
             const image_container = document.createElement("div");
-            
             image_container.append(img, likeButton, span);
-
-        
             exerciseCont.append(image_container);
+
+            likeButton.addEventListener('click', () => {
+                span.innerText++
+               
+            
+            })
         })
     })
-})
-
-likeButton.addEventListener('click', (event) => {
-    const buttonClicked = event.target
-    buttonClicked ++ 
-})
+});
+// we want to click a likeButton
+// the clickedLikeButton should increase the span containing the number
