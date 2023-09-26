@@ -10,18 +10,27 @@
 // 
 
 const exerciseUrl = "http://localhost:3000/Exercises"
+
 document.addEventListener('DOMContentLoaded', () => {
-    fetch (exerciseUrl)
+    fetch(exerciseUrl)
     .then((resp) => resp.json())
     .then(exerciseData => {
-        const excerciseCont = document.getElementById('exercise-container')
-        exerciseData.forEach((exerciseObj) =>{
-            const list = document.createElement('img')
-            list.src = exerciseObj.image
-            list.id = exerciseObj.id
-            excerciseCont.append(list)
+        const exerciseCont = document.getElementById('exercise-container')
+        exerciseData.forEach((exerciseObj) => {
+            const img = document.createElement('img');
+            img.src = exerciseObj.image;
+            img.id = exerciseObj.id;
+            exerciseCont.append(img);
+
+            const likeButton = document.createElement('button');
+            likeButton.innerText = 'Like';
+            likeButton.addEventListener('click', () => {
+                alert('Liked ' + exerciseObj.id);
+            });
+            exerciseCont.append(likeButton);
         })
     })
 })
+
 
 
