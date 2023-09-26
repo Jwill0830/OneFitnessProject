@@ -17,22 +17,22 @@ document.addEventListener('DOMContentLoaded', () => {
     .then(exerciseData => {
         const exerciseCont = document.getElementById('exercise-container')
         exerciseData.forEach((exerciseObj) => {
+
             const img = document.createElement('img');
             img.src = exerciseObj.image;
             img.id = exerciseObj.id;
-            exerciseCont.append(img);
 
             const likeButton = document.createElement('button');
-            likeButton.className = 'btn'
-            console.log(likeButton)
+            likeButton.className = 'btn';
             likeButton.innerText = 'Like';
-            likeButton.addEventListener('click', () => {
-                alert('Liked ' + exerciseObj.id);
-            });
-            exerciseCont.append(likeButton);
+
+            const image_container = document.createElement("div");
+            
+            image_container.append(img, likeButton);
+
+        
+            exerciseCont.append(image_container);
         })
     })
 })
-
-
 
