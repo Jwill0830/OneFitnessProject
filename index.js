@@ -50,8 +50,18 @@ document.addEventListener('DOMContentLoaded', () => {
 const title = document.getElementById('title')
 title.addEventListener('mouseover', () => {
     title.textContent = 'ONEFITNESS'
+});
+const form = document.querySelector('form ')
+const reviewCont = document.getElementById('form-container')
+console.log(reviewCont)
+form.addEventListener('submit',(event) => {
+    form.preventDefault()
+reviewCont = event.target.value 
+
+    
+
 })
 
-
-// when the mouse is hovering over h1 
-//the h1.innerText will enlargen 
+//where is from going to go? => We want the form to go on the side. => create a container for the form. 
+//what do we want the form to do? => 
+// we want the form to go into the span.innertext 
