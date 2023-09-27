@@ -54,5 +54,14 @@ img {
     background-color: #f9f9f9;
     border: 1px solid #ccc;
     box-shadow: 0 4px 8px rgba(0,0,0,0.1);
-    margin: 20px auto; /* Center the container */
+    margin: 20px auto; 
+}
+
+.nums {
+position: relative;
+right: -75px;
+width: 200xp;
+height: 120px;
+border-inline-style: solid;
+border-inline-color: pink;
 }
