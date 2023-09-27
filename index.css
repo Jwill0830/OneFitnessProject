@@ -1,3 +1,77 @@
+#title{
+    text-align: center;
+    font-size: 50px;
+    height: 50px;
+}
+#title:hover{
+ font-size: 80px;
+}
+
+img {
+    width: 150x;
+    height: 150px;
+    object-fit:cover;
+    display: block;
+    margin: auto; 
+    border: solid;
+    box-sizing: border-box  ;
+
+}
+
+.container {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(200px, 2fr));
+    grid-auto-rows: minmax(100px, auto);
+    gap: 100px;
+    border-bottom:double;
+}
+
+.form {
+    margin-top: 50px;
+    /* display:grid; */
+    /* grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));  */
+    /* grid-auto-rows: minmax(100px, auto); */
+    /* gap: 20px; */
+}
+
+.btn {
+    background-color: #2db40b;
+    
+    height: 35px;
+    text-align:center;
+    margin-top: 20px;
+    margin-left: 75px;
+}
+
+.form-container {
+    width: 300px;
+    padding: 20px;
+    background-color: #f9f9f9;
+    border: 1px solid #ccc;
+    box-shadow: 0 4px 8px rgba(0,0,0,0.1);
+    margin: 20px auto; 
+}
+
+.nums {
+position: relative;
+margin-left: 20px;
+width: 200xp;
+height: 120px;
+border: solid;
+}
+.sales {
+    color: red;
+    text-align: center;
+    border-bottom: double;
+}
+.review-container {
+    margin-top: 100px ;
+    padding-top: 100px;
+}
 body{
+    height: 100vh;
+    display:grid;
+    grid-template-rows: 33% 33% 33%;
+    
 
 }
